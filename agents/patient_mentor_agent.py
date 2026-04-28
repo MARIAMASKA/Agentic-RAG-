@@ -7,7 +7,7 @@ from schemas.mentor_state import MentorState
 class PatientMentorAgent:
     """Agent responsible for mentoring the patient and tracking progress."""
 
-    COMPLETION_MARKERS = ["done", "completed", "finished", "did it"cd]
+    COMPLETION_MARKERS = ["done", "completed", "finished", "did it"]
     QUESTION_MARKERS = ["?", "can i", "should i", "may i"]
     def process_confirmed_plan(self, plan: RecoveryPlan) -> MentorState:
         """
